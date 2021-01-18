@@ -1,6 +1,5 @@
 package com.java1995.spring_crud.service;
 
-import com.java1995.spring_crud.UsersConverter;
 import com.java1995.spring_crud.dto.UsersDto;
 import com.java1995.spring_crud.entity.Users;
 import com.java1995.spring_crud.exception.ValidationException;
