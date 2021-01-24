@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.java1995</groupId>
-	<artifactId>spring_crud</artifactId>
+	<artifactId>lenger</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring_crud</name>
+	<name>lenger</name>
 	<description>Simple crud app</description>
 
 	<properties>
