@@ -2,9 +2,11 @@ package com.java1995.lenger.dto;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Builder
+@NoArgsConstructor
 public class TasksDto {
     private Integer id;
 

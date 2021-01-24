@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/tasks") //All urls starts from /tasks
+@RequestMapping("/tasks")
 @AllArgsConstructor
 public class TasksController {
 

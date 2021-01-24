@@ -16,7 +16,6 @@ CREATE TABLE `task`
 --
 -- Dumping data for `task` table
 --
-
 INSERT INTO `task`(`id`, `author`, `task`, `solution`, `success_count`, `attempts`, `difficult`)
 VALUES (NULL, 'Victor Aretinsky', 'Требуется сложить два целых числа А и В.', 'https://github.com/php1995/lenger-tasks/edit/main/beginner/sum.py', 17, 30, 2.0)
 

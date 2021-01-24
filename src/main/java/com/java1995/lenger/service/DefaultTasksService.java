@@ -15,6 +15,7 @@ import static java.util.Objects.isNull;
 @AllArgsConstructor
 @Service
 public class DefaultTasksService implements TasksService {
+
     private final TasksRepository tasksRepository;
     private final TasksConverter tasksConverter;
 

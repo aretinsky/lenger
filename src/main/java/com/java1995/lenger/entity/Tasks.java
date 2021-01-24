@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Data //Lombok generates getters and setters, equals and hash methods
-@NoArgsConstructor //Lombok generates constructor without arguments
+@NoArgsConstructor
 @Table(name = "task")
 public class Tasks {
     @Id
