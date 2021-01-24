@@ -13,6 +13,7 @@ CREATE TABLE `task`
     `difficult`     DECIMAL(5, 1) DEFAULT 5.0
 ) ENGINE = INNODB;
 
+
 --
 -- Dumping data for `task` table
 --

@@ -5,7 +5,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
-
 @Entity
 @Data //Lombok generates getters and setters, equals and hash methods
 @NoArgsConstructor

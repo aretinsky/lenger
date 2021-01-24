@@ -1,5 +1,6 @@
 package com.java1995.lenger.exception;
 
+
 public class ValidationException extends Exception {
 
     private String message;

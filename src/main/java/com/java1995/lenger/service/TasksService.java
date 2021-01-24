@@ -5,6 +5,7 @@ import com.java1995.lenger.exception.ValidationException;
 
 import java.util.List;
 
+
 public interface TasksService {
     TasksDto saveTask(TasksDto tasksDto) throws ValidationException;
 
