@@ -7,3 +7,4 @@ public interface TasksRepository extends JpaRepository<Tasks, Integer> {
 
     Tasks findById(int id);
 }
+

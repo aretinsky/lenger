@@ -12,3 +12,4 @@ public interface TasksService {
 
     List<TasksDto> findAllTasks();
 }
+
