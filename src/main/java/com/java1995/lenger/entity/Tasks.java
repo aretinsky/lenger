@@ -1,20 +1,20 @@
 package com.java1995.lenger.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
-@Data //Lombok generates getters and setters, equals and hash methods
+@Data
 @NoArgsConstructor
+@AllArgsConstructor
 @Table(name = "task")
 public class Tasks {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    private String title;
 
     private String author;
 
@@ -27,4 +27,7 @@ public class Tasks {
     private int attempts;
 
     private double difficult;
+
+    private String title;
+
 }

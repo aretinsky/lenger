@@ -12,8 +12,6 @@ import lombok.NoArgsConstructor;
 public class TasksDto {
     private Integer id;
 
-    private String title;
-
     private String author;
 
     private String task;
@@ -25,4 +23,6 @@ public class TasksDto {
     private int attempts;
 
     private double difficult;
+
+    private String title;
 }
