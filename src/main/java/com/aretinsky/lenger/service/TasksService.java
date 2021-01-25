@@ -1,7 +1,7 @@
-package com.java1995.lenger.service;
+package com.aretinsky.lenger.service;
 
-import com.java1995.lenger.dto.TasksDto;
-import com.java1995.lenger.exception.ValidationException;
+import com.aretinsky.lenger.exception.ValidationException;
+import com.aretinsky.lenger.dto.TasksDto;
 
 import java.util.List;
 

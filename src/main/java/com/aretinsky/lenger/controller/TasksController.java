@@ -1,13 +1,12 @@
-package com.java1995.lenger.controller;
+package com.aretinsky.lenger.controller;
 
-import com.java1995.lenger.dto.TasksDto;
-import com.java1995.lenger.exception.ValidationException;
-import com.java1995.lenger.service.TasksService;
+import com.aretinsky.lenger.exception.ValidationException;
+import com.aretinsky.lenger.service.TasksService;
+import com.aretinsky.lenger.dto.TasksDto;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 

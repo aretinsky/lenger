@@ -1,9 +1,9 @@
-package com.java1995.lenger.service;
+package com.aretinsky.lenger.service;
 
-import com.java1995.lenger.dto.TasksDto;
-import com.java1995.lenger.entity.Tasks;
-import com.java1995.lenger.exception.ValidationException;
-import com.java1995.lenger.repository.TasksRepository;
+import com.aretinsky.lenger.exception.ValidationException;
+import com.aretinsky.lenger.dto.TasksDto;
+import com.aretinsky.lenger.entity.Tasks;
+import com.aretinsky.lenger.repository.TasksRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +18,7 @@ public class DefaultTasksService implements TasksService {
     private final TasksRepository tasksRepository;
     private final TasksConverter tasksConverter;
 
-    private void validateUserDto(TasksDto tasksDto) throws ValidationException {
+    private void validateTaskDto(TasksDto tasksDto) throws ValidationException {
         if (isNull(tasksDto)) {
             throw new ValidationException("Object user is null");
         }
@@ -30,7 +30,7 @@ public class DefaultTasksService implements TasksService {
 
     @Override
     public TasksDto saveTask(TasksDto tasksDto) throws ValidationException {
-        validateUserDto(tasksDto);
+        validateTaskDto(tasksDto);
         Tasks savedTask = tasksRepository.save(tasksConverter.fromTaskDtoToTask(tasksDto));
         return tasksConverter.fromTaskToTaskDto(savedTask);
     }

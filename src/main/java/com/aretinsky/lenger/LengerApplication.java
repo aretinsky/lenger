@@ -1,4 +1,4 @@
-package com.java1995.lenger;
+package com.aretinsky.lenger;
 
 
 import org.springframework.boot.SpringApplication;

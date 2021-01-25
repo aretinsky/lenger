@@ -1,6 +1,6 @@
-package com.java1995.lenger.repository;
+package com.aretinsky.lenger.repository;
 
-import com.java1995.lenger.entity.Tasks;
+import com.aretinsky.lenger.entity.Tasks;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

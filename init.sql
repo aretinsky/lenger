@@ -5,6 +5,7 @@
 CREATE TABLE `task`
 (
     `id`            INT AUTO_INCREMENT PRIMARY KEY,
+    `title`         VARCHAR(100) NOT NULL,
     `author`        VARCHAR(30)  NOT NULL,
     `task`          TEXT         NOT NULL,
     `solution`      VARCHAR(255) NOT NULL,
@@ -17,12 +18,14 @@ CREATE TABLE `task`
 --
 -- Dumping data for `task` table
 --
-INSERT INTO `task`(`id`, `author`, `task`, `solution`, `success_count`, `attempts`, `difficult`)
-VALUES (NULL, 'Victor Aretinsky', 'Требуется сложить два целых числа А и В.', 'https://github.com/php1995/lenger-tasks/edit/main/beginner/sum.py', 17, 30, 2.0)
+INSERT INTO `task`(`id`, `title`, `author`, `task`, `solution`, `success_count`, `attempts`, `difficult`)
+VALUES (NULL, 'a + b', 'Victor Aretinsky', 'Требуется сложить два целых числа А и В.',
+        'https://github.com/php1995/lenger-tasks/edit/main/beginner/sum.py', 28, 30, 2.1);
 
-INSERT INTO `task`(`id`, `author`, `task`, `solution`, `success_count`, `attempts`, `difficult`)
-VALUES (NULL, 'Victor Aretinsky', 'Наибольший общий делитель
+INSERT INTO `task`(`id`, `title`, `author`, `task`, `solution`, `success_count`, `attempts`, `difficult`)
+VALUES (NULL, 'НОД', 'Victor Aretinsky', 'Наибольший общий делитель
 Вводится два целых числа, находится их наибольший общий делитель.
 
-Примечание. Наибольший общий делитель (НОД, англ. GCD) - это наибольшее число, на которое нацело делятся два заданных числа. ', 'https://github.com/php1995/lenger-tasks/blob/main/beginner/gcd.py', 17, 30, 2.0)
+Примечание. Наибольший общий делитель (НОД, англ. GCD) - это наибольшее число, на которое нацело делятся два заданных числа. ',
+        'https://github.com/php1995/lenger-tasks/blob/main/beginner/gcd.py', 10, 12, 3.4);
 

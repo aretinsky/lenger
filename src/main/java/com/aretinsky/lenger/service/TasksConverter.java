@@ -1,8 +1,8 @@
-package com.java1995.lenger.service;
+package com.aretinsky.lenger.service;
 
 
-import com.java1995.lenger.dto.TasksDto;
-import com.java1995.lenger.entity.Tasks;
+import com.aretinsky.lenger.dto.TasksDto;
+import com.aretinsky.lenger.entity.Tasks;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -24,12 +24,13 @@ public class TasksConverter {
     public TasksDto fromTaskToTaskDto(Tasks tasks) {
         return TasksDto.builder()
                 .id(tasks.getId())
+                .title(tasks.getTitle())
                 .author(tasks.getAuthor())
                 .task(tasks.getTask())
                 .solution(tasks.getSolution())
                 .success_count(tasks.getSuccess_count())
                 .attempts(tasks.getAttempts())
-                .difficult(tasks.getAttempts())
+                .difficult(tasks.getDifficult())
                 .build();
     }
 }
