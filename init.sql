@@ -20,12 +20,12 @@ CREATE TABLE `task`
 --
 INSERT INTO `task`(`id`, `title`, `author`, `task`, `solution`, `success_count`, `attempts`, `difficult`)
 VALUES (NULL, 'a + b', 'Victor Aretinsky', 'Требуется сложить два целых числа А и В.',
-        'https://github.com/php1995/lenger-tasks/edit/main/beginner/sum.py', 28, 30, 2.1);
+        'https://github.com/aretinsky/lenger-tasks/blob/main/solutions/create_tests_for_this_tasks/sum.py', 28, 30, 2.1);
 
 INSERT INTO `task`(`id`, `title`, `author`, `task`, `solution`, `success_count`, `attempts`, `difficult`)
 VALUES (NULL, 'НОД', 'Victor Aretinsky', 'Наибольший общий делитель
 Вводится два целых числа, находится их наибольший общий делитель.
 
 Примечание. Наибольший общий делитель (НОД, англ. GCD) - это наибольшее число, на которое нацело делятся два заданных числа. ',
-        'https://github.com/php1995/lenger-tasks/blob/main/beginner/gcd.py', 10, 12, 3.4);
+        'https://github.com/php1995/lenger-tasks/blob/main/solutions/create_test_for_this_tasks/gcd.py', 10, 12, 3.4);
 

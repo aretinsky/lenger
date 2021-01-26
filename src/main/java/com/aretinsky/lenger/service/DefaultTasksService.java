@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
+
 import static java.util.Objects.isNull;
 
 @AllArgsConstructor
@@ -46,6 +47,11 @@ public class DefaultTasksService implements TasksService {
                 .stream()
                 .map(tasksConverter::fromTaskToTaskDto)
                 .collect(Collectors.toList());
+    }
+
+    @Override
+    public Tasks findTaskById(int id) {
+        return tasksRepository.findById(id);
     }
 }
 

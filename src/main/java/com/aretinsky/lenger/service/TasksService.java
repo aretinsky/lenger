@@ -1,5 +1,6 @@
 package com.aretinsky.lenger.service;
 
+import com.aretinsky.lenger.entity.Tasks;
 import com.aretinsky.lenger.exception.ValidationException;
 import com.aretinsky.lenger.dto.TasksDto;
 
@@ -12,5 +13,7 @@ public interface TasksService {
     void deleteTask(Integer userId);
 
     List<TasksDto> findAllTasks();
+
+    Tasks findTaskById(int id);
 }
 

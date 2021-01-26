@@ -1,43 +1,20 @@
 package com.aretinsky.lenger.controller;
 
-import com.aretinsky.lenger.exception.ValidationException;
 import com.aretinsky.lenger.service.TasksService;
-import com.aretinsky.lenger.dto.TasksDto;
 import lombok.AllArgsConstructor;
-import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
-@RestController
-@RequestMapping("/tasks")
+@Controller
 @AllArgsConstructor
 public class TasksController {
 
     private final TasksService tasksService;
 
-    @GetMapping("/{id}")
-    public String taskPage(Model model) {
-
+    @GetMapping("tasks/{id}")
+    public String taskPage(Model model, @PathVariable(value = "id") int id) {
+        model.addAttribute("task", tasksService.findTaskById(id));
         return "task";
-    }
-
-    //Crud operations
-
-    @PostMapping("/save")
-    public TasksDto saveTask(@RequestBody TasksDto tasksDto) throws ValidationException {
-        return tasksService.saveTask(tasksDto);
-    }
-
-    @GetMapping("/findAll")
-    public List<TasksDto> findAllTasks(Model model) {
-        return tasksService.findAllTasks();
-    }
-
-    @GetMapping("/delete/{id}")
-    public ResponseEntity<Void> deleteTask(@PathVariable Integer id) {
-        tasksService.deleteTask(id);
-        return ResponseEntity.ok().build();
     }
 }
