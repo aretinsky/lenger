@@ -5,18 +5,18 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 @AllArgsConstructor
 @NoArgsConstructor
-public class MainController {
+public class AdminController {
 
     private TasksService tasksService;
 
-    @RequestMapping("/")
-    public String main(Model model) {
-        model.addAttribute("tasks", tasksService.findAllTasks());
-        return "greeting";
+    @PostMapping("/tasks/add")
+    public String addTask(Model model) {
+       // model.addAttribute("task", "");
+        return "addTask";
     }
 }
