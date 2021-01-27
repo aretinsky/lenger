@@ -1,15 +1,19 @@
-package com.aretinsky.lenger.dto;
+package com.aretinsky.lenger.entity;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
+
+@Entity
 @Data
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class TasksDto {
+@Table(name = "task")
+public class Task {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String title;

@@ -6,16 +6,25 @@
 </head>
 <body>
 
-<div th:insert="tasksList.html" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+<header th:insert="header.html">
+
+</header>
+
+<div th:insert="taskList.html" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
 </div>
 
-<form action="#">
-    <input id="author" placeholder="Фамилия и имя">
-    <input id="task" placeholder="Задание">
-    <input id="solution" placeholder="Ссылка на решение с github.com">
-    <input id="difficult" placeholder="Уровень сложности">
-    <button>Создать задание</button>
+<form action="#" th:action="@{/admin/task/add}" th:object="${task}" method="post">
+    <p class="sub-title">Описание задания</p>
+    <textarea th:field="*{task}" required> </textarea>
+
+    <p class="sub-title">Ссылка на решение с github</p>
+    <input th:field="*{solution}" required>
+
+    <p>Оцените уровень сложности задания: </p>
+    <input th:field="*{difficult}" required>
+
+    <input type="submit" value="Создать задание">
 </form>
 
 </body>

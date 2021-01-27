@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<head th:insert="head.html">
+    <title>Домашняя страница</title>
 </head>
 <body>
 <div class="album py-5 bg-light">
     <div class="container">
 
-        <div th:insert="tasksList.html" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div th:insert="taskList.html" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
         </div>
     </div>
