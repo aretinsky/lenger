@@ -1,6 +1,6 @@
 package org.aretinsky.lenger.controller.admin;
 
-import org.aretinsky.lenger.service.interfaces.TaskService;
+import org.aretinsky.lenger.service.api.TaskService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

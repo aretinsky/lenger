@@ -1,4 +1,4 @@
-package org.aretinsky.lenger.service.interfaces;
+package org.aretinsky.lenger.service.api;
 
 import org.aretinsky.lenger.entity.user.Task;
 import org.aretinsky.lenger.exception.ValidationException;
