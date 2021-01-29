@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:="http://www.thymeleaf.org">
-<head th:insert="blocks/head.html">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="/blocks/head.html"/>
     <title>Домашняя страница</title>
 </head>
 <body>
+<header>
+    <th:block th:replace="/blocks/header.html"/>
+</header>
 <div class="album py-5 bg-light">
     <div class="container">
-
-        <div th:insert="taskList.html" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-
-        </div>
+        <th:block th:replace="/blocks/taskList.html"/>
     </div>
 </div>
 </body>

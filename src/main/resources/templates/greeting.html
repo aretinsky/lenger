@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns:="http://www.thymeleaf.org">
-<head th:insert="blocks/head.html">
-    <title>Главная страница</title>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <th:block th:replace="/blocks/head.html"/>
+    <title>Hello, world!</title>
 </head>
 <body>
-<body screen_capture_injected="true">
+<body>
 
-<header th:insert="header.html">
-
+<header>
+    <th:block th:replace="/blocks/header.html"/>
 </header>
 
 <main>

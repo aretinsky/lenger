@@ -14,6 +14,7 @@ public class TaskController {
 
     @GetMapping("/home")
     public String homePage(Model model) {
+        model.addAttribute("taskList", taskService.findAllTasks());
         return "homepage";
     }
 

@@ -9,16 +9,16 @@ import org.springframework.stereotype.Component;
 public class TaskConverter {
 
     public Task fromTaskDtoToTask(TaskDto taskDto) {
-        Task task = new Task();
-        task.setId(taskDto.getId());
-        task.setTitle(taskDto.getTitle());
-        task.setAuthor(taskDto.getAuthor());
-        task.setTask(taskDto.getTask());
-        task.setSolution(taskDto.getSolution());
-        task.setSuccess_count(taskDto.getSuccess_count());
-        task.setAttempts(taskDto.getAttempts());
-        task.setDifficult(taskDto.getDifficult());
-        return task;
+        return Task.builder()
+                .id(taskDto.getId())
+                .title(taskDto.getTitle())
+                .author(taskDto.getAuthor())
+                .task(taskDto.getTask())
+                .solution(taskDto.getSolution())
+                .success_count(taskDto.getSuccess_count())
+                .attempts(taskDto.getAttempts())
+                .difficult(taskDto.getDifficult())
+                .build();
     }
 
     public TaskDto fromTaskToTaskDto(Task task) {

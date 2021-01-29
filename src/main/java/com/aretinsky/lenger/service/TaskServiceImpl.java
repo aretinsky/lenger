@@ -14,20 +14,10 @@ import static java.util.Objects.isNull;
 
 @AllArgsConstructor
 @Service
-public class DefaultTaskService implements TaskService {
+public class TaskServiceImpl implements TaskService {
 
     private final TaskRepository taskRepository;
     private final TaskConverter taskConverter;
-
-    /*private void validateTaskDto(TaskDto taskDto) throws ValidationException {
-        if (isNull(taskDto)) {
-            throw new ValidationException("Object user is null");
-        }
-        if (isNull(taskDto.getSolution()) || taskDto.getSolution().isEmpty()) {
-            throw new ValidationException("Login is empty");
-        }
-    }*/
-
 
     @Override
     public TaskDto saveTask(TaskDto taskDto) throws ValidationException {
@@ -36,8 +26,8 @@ public class DefaultTaskService implements TaskService {
     }
 
     @Override
-    public void deleteTask(Integer userId) {
-        taskRepository.deleteById(userId);
+    public void deleteTask(Integer taskId) {
+        taskRepository.deleteById(taskId);
     }
 
     @Override

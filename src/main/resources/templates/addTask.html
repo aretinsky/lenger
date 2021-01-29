@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns:th="http://www.thymeleaf.org">
-<head th:insert="blocks/head.html">
-    <meta charset="UTF-8">
+<head>
+    <th:block th:replace="/blocks/head.html"/>
     <title>Добавить задание</title>
 </head>
 <body>
 
-<header th:insert="header.html">
-
+<header>
+    <th:block th:replace="/blocks/header.html"/>
 </header>
 
-<div th:insert="taskList.html" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-</div>
 
 <form action="#" th:action="@{/admin/task/add}" th:object="${task}" method="post">
     <p class="sub-title">Описание задания</p>
