@@ -1,4 +1,4 @@
-# spring_crud
+# Aretinsky lenger
 
 ##### 100+ Python tasks
 ##### Online Python compiler
