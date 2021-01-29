@@ -1,6 +1,6 @@
-package com.aretinsky.lenger.controller;
+package org.aretinsky.lenger.controller.user;
 
-import com.aretinsky.lenger.service.TaskService;
+import org.aretinsky.lenger.service.interfaces.TaskService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,13 +14,13 @@ public class TaskController {
 
     @GetMapping("/home")
     public String homePage(Model model) {
-        model.addAttribute("taskList", taskService.findAllTasks());
+        model.addAttribute("taskList", taskService.findAll());
         return "homepage";
     }
 
     @GetMapping("/task/{id}")
     public String taskPage(Model model, @PathVariable(value = "id") int id) {
-        model.addAttribute("task", taskService.findTaskById(id));
+        model.addAttribute("task", taskService.findById(id));
         return "task";
     }
 }

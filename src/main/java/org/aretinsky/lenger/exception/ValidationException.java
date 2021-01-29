@@ -1,4 +1,4 @@
-package com.aretinsky.lenger.exception;
+package org.aretinsky.lenger.exception;
 
 
 public class ValidationException extends Exception {

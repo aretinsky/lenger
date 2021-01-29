@@ -1,4 +1,4 @@
-package com.aretinsky.lenger.entity;
+package org.aretinsky.lenger.entity.user;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -12,7 +12,6 @@ import javax.persistence.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "task")
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -22,14 +21,17 @@ public class Task {
 
     private String author;
 
-    private String task;
+    //link to github file with task description
+    private String github_description;
 
-    private String solution;
+    //link to github file with task solution
+    private String github_solution;
 
     private int success_count;
 
-    private int attempts;
+    private int attempts_count;
 
-    private double difficult;
+    private double difficult_level;
+
 
 }

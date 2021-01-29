@@ -1,6 +1,6 @@
-package com.aretinsky.lenger.repository;
+package org.aretinsky.lenger.repository.user;
 
-import com.aretinsky.lenger.entity.Task;
+import org.aretinsky.lenger.entity.user.Task;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 

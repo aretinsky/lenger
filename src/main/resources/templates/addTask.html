@@ -14,13 +14,13 @@
 
 <form action="#" th:action="@{/admin/task/add}" th:object="${task}" method="post">
     <p class="sub-title">Описание задания</p>
-    <textarea th:field="*{task}" required> </textarea>
+    <textarea th:field="*{github_description}" required> </textarea>
 
     <p class="sub-title">Ссылка на решение с github</p>
-    <input th:field="*{solution}" required>
+    <input th:field="*{github_solution}" required>
 
     <p>Оцените уровень сложности задания: </p>
-    <input th:field="*{difficult}" required>
+    <input th:field="*{difficult_level}" required>
 
     <input type="submit" value="Создать задание">
 </form>

@@ -1,4 +1,4 @@
-package com.aretinsky.lenger;
+package org.aretinsky.lenger;
 
 
 import org.springframework.boot.SpringApplication;
