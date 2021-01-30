@@ -4,7 +4,7 @@ import org.aretinsky.lenger.exception.ValidationException;
 import org.aretinsky.lenger.dto.user.TaskDto;
 import org.aretinsky.lenger.entity.user.Task;
 import org.aretinsky.lenger.repository.user.TaskRepository;
-import org.aretinsky.lenger.service.converters.TaskConverter;
+import org.aretinsky.lenger.service.converter.TaskConverter;
 import org.aretinsky.lenger.service.api.TaskService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

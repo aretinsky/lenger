@@ -1,4 +1,4 @@
-package org.aretinsky.lenger.service.converters;
+package org.aretinsky.lenger.service.converter;
 
 
 import org.aretinsky.lenger.dto.user.TaskDto;
